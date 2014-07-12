@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.cranberrygame.phonegap.plugin.apppage"
+    version="1.0.2">
+	
+    <name>app page</name>
+    <description>open app page (app page or review apge)</description>
+    <license>Apache 2.0</license>
+    <keywords>app,page</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.apppage</repo>
+ 	
+	<!-- window.apppage.xxx(); -->
+	<!-- apppage.xxx(); -->
+    <js-module src="www/apppage.js" name="apppage">
+        <clobbers target="window.apppage"/>
+    </js-module>
+	
+    <!-- wp8 -->
+    <platform name="wp8">
+        <config-file target="config.xml" parent="/*">
+            <feature name="AppPage">
+                <param name="wp-package" value="AppPage"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/wp8/AppPage.cs" />
+    </platform>	
+</plugin>
