@@ -14,10 +14,10 @@ using System.Diagnostics; //Debug.WriteLine
 
 namespace Cordova.Extension.Commands
 {
-    public class AppUrl : BaseCommand
+    public class DownloadApp : BaseCommand
     {
 
-        public void openAppUrl(string args)
+        public void openDownloadAppUrl(string args)
         {
 			Debug.WriteLine("test");
   

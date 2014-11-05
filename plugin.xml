@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.cranberrygame.phonegap.plugin.appurl"
+    id="com.cranberrygame.phonegap.plugin.downloadapp"
     version="1.0.10">
 	
-    <name>Phonegap AppUrl plugin</name>
-    <description>Phonegap AppUrl plugin</description>
+    <name>Phonegap DownloadApp plugin</name>
+    <description>Phonegap DownloadApp plugin</description>
     <author>Sang Ki Kwon (Cranberrygame)</author>		
     <license>MIT</license>
-    <keywords>phonegap, plugin, appurl</keywords>
-    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.appurl</repo>
-    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.appurl/issues</issue> 	
+    <keywords>phonegap, plugin, downloadapp</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.downloadapp</repo>
+    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.downloadapp/issues</issue> 	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
     <dependency id="org.apache.cordova.inappbrowser" version="0.5.2"/>	
 	
-    <js-module src="www/appurl.js">
-        <clobbers target="window.appurl"/>
+    <js-module src="www/downloadapp.js">
+        <clobbers target="window.downloadapp"/>
     </js-module>
 	
     <!-- wp8 -->
     <platform name="wp8">
         <config-file target="config.xml" parent="/*">
-            <feature name="AppUrl">
-                <param name="wp-package" value="AppUrl"/>
+            <feature name="DownloadApp">
+                <param name="wp-package" value="DownloadApp"/>
             </feature>
         </config-file>
 
-        <source-file src="src/wp8/AppUrl.cs" />
+        <source-file src="src/wp8/DownloadApp.cs" />
     </platform>	
 </plugin>
