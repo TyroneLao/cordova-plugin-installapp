@@ -1,2 +1,2 @@
 
-# com.cranberrygame.phonegap.plugin.appmain
+# com.cranberrygame.phonegap.plugin.appurl

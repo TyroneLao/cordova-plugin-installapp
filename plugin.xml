@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.cranberrygame.phonegap.plugin.appmain"
+    id="com.cranberrygame.phonegap.plugin.appurl"
     version="1.0.10">
 	
-    <name>Phonegap AppMain plugin</name>
-    <description>Phonegap AppMain plugin</description>
+    <name>Phonegap AppUrl plugin</name>
+    <description>Phonegap AppUrl plugin</description>
     <author>Sang Ki Kwon (Cranberrygame)</author>		
     <license>MIT</license>
-    <keywords>phonegap, plugin, appmain</keywords>
-    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.appmain</repo>
-    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.appmain/issues</issue> 	
+    <keywords>phonegap, plugin, appurl</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.appurl</repo>
+    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.appurl/issues</issue> 	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
     <dependency id="org.apache.cordova.inappbrowser" version="0.5.2"/>	
 	
-    <js-module src="www/appmain.js">
-        <clobbers target="window.appmain"/>
+    <js-module src="www/appurl.js">
+        <clobbers target="window.appurl"/>
     </js-module>
 	
     <!-- wp8 -->
     <platform name="wp8">
         <config-file target="config.xml" parent="/*">
-            <feature name="AppMain">
-                <param name="wp-package" value="AppMain"/>
+            <feature name="AppUrl">
+                <param name="wp-package" value="AppUrl"/>
             </feature>
         </config-file>
 
-        <source-file src="src/wp8/AppMain.cs" />
+        <source-file src="src/wp8/AppUrl.cs" />
     </platform>	
 </plugin>
