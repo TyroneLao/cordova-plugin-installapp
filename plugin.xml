@@ -1,29 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.cranberrygame.phonegap.plugin.apppage"
-    version="1.0.2">
+    id="com.cranberrygame.phonegap.plugin.appmain"
+    version="1.0.10">
 	
-    <name>AppPage</name>
-    <description>AppPage</description>
+    <name>Phonegap AppMain plugin</name>
+    <description>Phonegap AppMain plugin</description>
+    <author>Sang Ki Kwon (Cranberrygame)</author>		
     <license>MIT</license>
-    <keywords>phonegap, apppage</keywords>
-    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.apppage</repo>
- 	
-	<!-- window.apppage.xxx(); -->
-	<!-- apppage.xxx(); -->
-    <js-module src="www/apppage.js" name="apppage">
-        <clobbers target="window.apppage"/>
+    <keywords>phonegap, plugin, appmain</keywords>
+    <repo>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.appmain</repo>
+    <issue>https://github.com/cranberrygame/com.cranberrygame.phonegap.plugin.ad.appmain/issues</issue> 	
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <dependency id="org.apache.cordova.inappbrowser" version="0.5.2"/>	
+	
+    <js-module src="www/appmain.js">
+        <clobbers target="window.appmain"/>
     </js-module>
 	
     <!-- wp8 -->
     <platform name="wp8">
         <config-file target="config.xml" parent="/*">
-            <feature name="AppPage">
-                <param name="wp-package" value="AppPage"/>
+            <feature name="AppMain">
+                <param name="wp-package" value="AppMain"/>
             </feature>
         </config-file>
 
-        <source-file src="src/wp8/AppPage.cs" />
+        <source-file src="src/wp8/AppMain.cs" />
     </platform>	
 </plugin>
