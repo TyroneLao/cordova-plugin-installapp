@@ -15,7 +15,7 @@
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
 	
-    <dependency id="org.apache.cordova.inappbrowser" version="0.5.2"/>	
+    <dependency id="org.apache.cordova.inappbrowser" />	
 	
     <js-module src="www/downloadapp.js">
         <clobbers target="window.downloadapp"/>
