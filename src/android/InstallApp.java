@@ -29,8 +29,6 @@ public class InstallApp extends CordovaPlugin {
 	
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		PluginResult result = null;
-		
 		//args.length()
 		//args.getString(0)
 		//args.getString(1)
