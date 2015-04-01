@@ -1,2 +1,2 @@
 
-# com.cranberrygame.phonegap.plugin.downloadapp
+# com.cranberrygame.cordova.plugin.installapp
