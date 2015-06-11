@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="com.cranberrygame.cordova.plugin.installapp"
-    version="1.0.21">
+    id="cordova-plugin-installapp"
+    version="1.0.41">
 	
     <name>Cordova InstallApp plugin</name>
     <description>Cordova InstallApp plugin</description>
     <author>Sang Ki Kwon (Cranberrygame)</author>		
     <license>MIT</license>
-    <keywords>cordova, plugin, installapp</keywords>
-    <repo>https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.installapp</repo>
-    <issue>https://github.com/cranberrygame/com.cranberrygame.cordova.plugin.installapp/issues</issue> 	
+    <keywords>cordova,plugin,installapp</keywords>
+    <repo>https://github.com/cranberrygame/cordova-plugin-installapp</repo>
+    <issue>https://github.com/cranberrygame/cordova-plugin-installapp/issues</issue> 	
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
