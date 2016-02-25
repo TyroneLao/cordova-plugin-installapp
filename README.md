@@ -1,2 +1,2 @@
 
-# com.cranberrygame.cordova.plugin.installapp
+# cordova-plugin-installapp

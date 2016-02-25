@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-installapp"
-    version="1.0.41">
+    version="1.0.42">
 	
     <name>Cordova InstallApp plugin</name>
     <description>Cordova InstallApp plugin</description>
@@ -17,7 +17,7 @@
 	
     <dependency id="org.apache.cordova.inappbrowser" />	
 	
-    <js-module src="www/installapp.js">
+    <js-module src="www/installapp.js" name="installapp">
         <clobbers target="window.installapp"/>
     </js-module>
 	
